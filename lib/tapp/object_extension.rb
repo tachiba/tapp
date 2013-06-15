@@ -15,6 +15,10 @@ module Tapp
       tapp :puts, &block
     end
 
+    def taplog(&block)
+      tapp :logger, &block
+    end
+
     def taap
       warn 'DEPRECATION WARNING: `taap` is deprecated. Set `Tapp.config.default_printer = :awesome_print` and use `tapp` instead.'
 

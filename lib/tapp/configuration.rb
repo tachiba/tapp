@@ -9,6 +9,7 @@ module Tapp
     def reset
       self.default_printer = :pretty_print
       self.report_caller   = false
+      self.logger = nil
     end
 
     def logger_configuration
